@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: #333;
-    font-family: arial;
+    font-family: monospace;
     max-width:650px;
     margin: 0 auto;
     padding: 0 16px;
@@ -20,7 +25,7 @@ footer {
 }
 
 header {
-    margin-top:16px;
+    margin-top:0px;
     margin-bottom: 40px;
 }
 
@@ -38,7 +43,7 @@ header #head-box{
 
 h1 {
     font-size: 64px;
-    margin-bottom:30px;
+    margin-bottom:0px;
 }
 
 header #nav a {
@@ -56,39 +61,56 @@ header #nav a:hover {
 }
 
 header #nav {
-    background-color: rgb(6, 112, 50);
-    margin-top: -25px;
+    background-color: #333;
     height: 30px;
     display:flex;
     align-items: center;
-
-    animation-name:colour;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+    font-size: 15px;
 }
 
+#description {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+form {
+    height: 10vh;
+    width: 80%;
+    margin: 5px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+form input {
+    outline: none;
+    border: solid 1px #666;
+    padding: 5px 0px 5px 5px;
+    height: 48%;
+}
+
+form button {
+    outline: none;
+    border: solid 1px #666;
+    height: 48%;
+    background: #333;
+    color: #fff;
+}
+
+#message-1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#message-2 {
+    text-align: center;
+    margin-top: 30px;
+}
 .potrait img {
     width:250px;
-}
-
-@keyframes colour {
-    0% {
-        background-color: rgb(66, 66, 66);
-    }
-
-    25% {
-        background-color: rgb(56, 56, 56);
-    }
-    50% {
-        background-color: rgb(87, 87, 87);
-    }
-
-    75% {
-        background-color: rgb(94, 94, 94);
-    }
-    100% {
-        background-color: rgb(49, 49, 49);
-    }
 }
 
 @media only screen and (max-width: 600px){
@@ -99,7 +121,8 @@ header #nav {
     
     h1 {
         font-size: 30px;
-        margin-bottom:30px;
+        margin-bottom:0px;
+        padding: 5px 0px 5px 5px;
     }
 
     header {
@@ -109,7 +132,8 @@ header #nav {
 
     #head-box #animation img{
         margin-bottom: -10px;
-        width: 20px;
+        margin-right: 5px;
+        width: 40px;
         height: auto;
     }
 }
