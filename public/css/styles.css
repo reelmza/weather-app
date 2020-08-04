@@ -94,6 +94,7 @@ header #nav {
 @media only screen and (max-width: 600px){
     body {
       margin:0px;
+      padding: 0px;
     }
     
     h1 {
@@ -104,5 +105,11 @@ header #nav {
     header {
         margin-top:0px;
         margin-bottom: 10px;
+    }
+
+    #head-box #animation img{
+        margin-bottom: -10px;
+        max-height: 100%;
+        width: auto;
     }
 }
