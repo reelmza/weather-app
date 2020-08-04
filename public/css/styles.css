@@ -32,6 +32,8 @@ header #head-box{
 }
 #head-box #animation img{
     margin-bottom: -10px;
+    max-height: 100%;
+    width: auto;
 }
 
 h1 {
@@ -90,8 +92,17 @@ header #nav {
 }
 
 @media only screen and (max-width: 600px){
+    body {
+      margin:0px;
+    }
+    
     h1 {
         font-size: 30px;
         margin-bottom:30px;
+    }
+
+    header {
+        margin-top:0px;
+        margin-bottom: 10px;
     }
 }
