@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 //Page Calls
 app.get('', (req, res)=> {
     res.render('index', {
-        title: 'Weather App',
+        title: 'WEATHER APP',
         name: 'Jesse Moses'
       })
 })
@@ -89,4 +89,3 @@ app.get('*', (req, res)=> {
 app.listen(port, () => {
     console.log('Sever up on port: ' + '3000')
 })
-

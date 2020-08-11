@@ -17,8 +17,11 @@ weatherForm.addEventListener('submit', (e) => {
 
         if (error) {
             messageOne.textContent = error
+            messageTwo.setAttribute('style', 'display:none !important')
         }else {
+
             messageOne.textContent = location 
+            messageTwo.setAttribute('style', 'display:block')
             messageTwo.textContent = forecast
         }
 

@@ -10,15 +10,17 @@
     <body> 
         <div class="main-content">
             {{>header}}
-            <p id="description">Get real time weather quickly!</p>
-
-            <form>
-                <input type="search" placeholder="e.g London"/>
-                <button>SEARCH</button>
-            </form>
+            
+            <div id="formBox">
+                <p id="description">Get real time weather quickly!</p>
+                <form>
+                    <input type="search" placeholder="e.g London"/>
+                    <button>SEARCH</button>
+                </form>
+            </div>
 
             <p id="message-1"></p>
-            <p id="message-2"></p>
+            <p id="message-2">Enter A Location...</p>
         </div>
 
         {{>footer}}
